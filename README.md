@@ -12,7 +12,7 @@ The dataset for this project was available at https://www.kaggle.com/meowmeowmeo
 I used a Deep Neural Network model, with 10 layers in total, as shown in the table below.
 
 | Layer | Output Shape | No. of parameters|
--
+|-------|--------------|------------------|
 | Conv2D) | (None, 48, 48, 8) | 224 |
 
 
