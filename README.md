@@ -39,7 +39,9 @@ I used a Deep Neural Network model, with 8 layers in total, as shown in the tabl
 | Dense | (None, 43) | 1332011 |
 
 Total parameters = 1,333,499
+
 Trainable parameters = 1,333,451
+
 Non-trainable parameters = 48
 
 The layers we used in the Deep Neural Network also had dropout in it, which hasn't been shown in the table, inorder to prevent overfitting.
@@ -52,6 +54,7 @@ The layers we used in the Deep Neural Network also had dropout in it, which hasn
 After running the model for 50 epochs, with a batch size of 512 and a validation set containing 20% of the training data, with Adam optimizer as an evaluation metric, we ended up getting a training set accuracy of 98.78% and a validation set accuracy of 95.93%.
 
 **Training accuracy = 98.78 %**
+
 **Validation accuracy = 95.93 %**
 
 
@@ -59,7 +62,8 @@ After running the model for 50 epochs, with a batch size of 512 and a validation
 ### Test Results -
 
 On running the data on the Test set, we end up with an accuracy of 85.39 %, which isnt't too bad.
-**Test accuracy = 85.39 %
+
+**Test accuracy = 85.39 %** 
 
 
 
