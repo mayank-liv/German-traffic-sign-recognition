@@ -2,7 +2,8 @@
 ### Deep Learning project to identify traffic signs. Part of a larger project to aid self-driving cars
 
 
-## Overview - 
+
+### Overview - 
 
 In this project, I aim to build a model to classify traffic signs into various categories, using Python and Keras.
 
@@ -11,7 +12,9 @@ This project is a minor project, which forms a part of a larger project to aid s
 This project aims to develop a model to exactly that.
 
 
-## Dataset -
+
+
+### Dataset -
 
 The dataset for this project was available at https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign. The training data contains 39,209 labelled data while the test data has 12,630 unlabelled data.
 
@@ -19,7 +22,8 @@ The dataset contains traffic sign images belonging to 43 different classes, and 
 
 
 
-## Model Used -
+
+### Model Used -
 
 I used a Deep Neural Network model, with 8 layers in total, as shown in the table below.
 
@@ -41,21 +45,26 @@ Non-trainable parameters = 48
 The layers we used in the Deep Neural Network also had dropout in it, which hasn't been shown in the table, inorder to prevent overfitting.
 
 
-## Training Results - 
+
+
+### Training Results - 
 
 After running the model for 50 epochs, with a batch size of 512 and a validation set containing 20% of the training data, with Adam optimizer as an evaluation metric, we ended up getting a training set accuracy of 98.78% and a validation set accuracy of 95.93%.
 
-### Training accuracy = 98.78 %
-### Validation accuracy = 95.93 %
+**Training accuracy = 98.78 %**
+**Validation accuracy = 95.93 %**
 
 
-## Test Results -
+
+### Test Results -
 
 On running the data on the Test set, we end up with an accuracy of 85.39 %, which isnt't too bad.
-### Test accuracy = 85.39 %
+**Test accuracy = 85.39 %
 
 
-## Future improvements - 
+
+
+### Future improvements - 
 
 Although the test set accuracy of 85.39% is satisfactory, it is still not good enough to be a part of an actual self-driving ca. So, since we have a lot more trainable parameters (1,333,451) than the training data (39,209 images), we must use data augmentation to develop plenty of other images to form a part of the training data. This will ensure that the model has enough training data to get the parameters trained even better than before. Also, we can develop a deeper neural network, so that the accuracy of the model can further improve. My ultimate aim is to improve the test accuracy to reach at least a threshold level of 90%, before it can be used in a prototype of a self-driving car.
 
